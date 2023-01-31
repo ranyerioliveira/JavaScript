@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://JavaScript-Iniciante",
+            "request": "launch",
+            "url": "http://JavaScript-Iniciante"
+        }
+    ]
+}
