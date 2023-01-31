@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo exercicio 005</title>
+    <style>
+        body{
+            background-color: lightskyblue;
+            color: aliceblue;
+            font: normal 20pt arial;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos de DOM</h1>
+    <p>Bora codar</p>
+    <p>Apredendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p>É um acronomo para <strong>Document Object Model</strong>, é um conjunto de obetos dentro do navegador, o importante é saber fazer a sua arvore DOM, tudo dentro do JS te o Window</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d = window.document.querySelector('div#msg')
+        //var d = window.document.getElementById('msg')
+        window.document.write('O que você quer: ' + p1.innerText)
+        p1.style.color = 'red'
+        corpo.style.backgroundColor = 'black'
+        //window.alert(p1.innerHTML)
+        //d.style.backgroundColor = 'green'
+        //d.innerHTML = 'Olá' 
+        d.style.backgroundColor = 'red'
+        // o querySelector é o metodo mais recente e o mais recomendado para hoje em dia
+
+    </script>
+</body>
+</html>

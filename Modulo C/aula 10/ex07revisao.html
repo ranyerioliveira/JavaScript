@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de DOM</title>
+    <link rel="shortcut icon" href="transferir.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgba(78 129 237 / 43%);
+            color: white;
+        }
+        main{
+            background-color: white;
+            width: auto;
+            height: auto;
+            margin: 220px;
+            padding: 94px;
+            border-radius: 10px;
+                    }
+        h1{
+            background-image: linear-gradient(to left,#F20A91, #F20AFC, #A314E6, #6E0AFC, #2A0AF2);
+            font: normal 35pt Arial;
+            width: 700px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: black;
+            border: solid;
+        }
+        p{
+            background-image: linear-gradient(to left,#F20A91, #F20AFC, #A314E6, #6E0AFC, #2A0AF2);
+            font: normal 35pt Arial;
+            width: 700px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#i2{
+            font: normal 20pt Arial;
+            background: rgba(5, 76, 5, 0.696);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;}
+        h2#titulo{
+            font: normal 20pt Arial;
+            background: rgba(76, 29, 5, 0.696);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;}
+        div#res{
+            font: normal 25pt Arial;
+            width: 722px;
+            height: 200px;
+            line-height: 200px;
+            padding: 15px;
+            text-align: center;
+            color: black;
+            background-image: linear-gradient(to left,#F20A91, #F20AFC, #A314E6, #6E0AFC, #2A0AF2);
+            border-radius: 15px;
+        }
+        div#calc{
+        width: auto; 
+        height: 100px;
+        margin: auto;
+        padding: auto;   
+        }
+      
+    </style>
+<body>
+    <main>
+    <h1>Teste de arvore DOM</h1>
+    <p style="color: black ;">Vamos estudar</p>
+    <section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jtzBhKkUKXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <div id="i2">
+        Passe aqui
+    </div>
+    <h2 id="titulo">Aperte aqui</h2>
+    <hr>
+    <h1 id="tit1">Vamos Calcular</h1>
+    <div id="calc">
+        <input type="number" name="txtn1" id="txtn1"> x
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Mult" onclick="vezes()">
+    </div>
+    <br>
+    <br>
+    <div id="res">Igual à:</div>
+    <script>
+    var p1 = window.document.getElementsByTagName('p')[0]
+        p1.addEventListener('mouseenter', entrar00)
+        p1.addEventListener('mouseout', sair00)
+    var e = window.document.getElementById('i2')
+        e.addEventListener('click', clicar)
+        e.addEventListener('mouseenter', entrar)
+        e.addEventListener('mouseout', sair)
+    var t = window.document.getElementById('titulo')
+        t.addEventListener('click', apertar)
+        t.addEventListener('mouseenter', entrart)
+        t.addEventListener('mouseout', sairt)
+
+    
+
+    function clicar(){
+        e.innerText = 'Clicou'
+        e.style.background = 'red'
+    }
+    function entrar(){
+        e.innerText = 'Entrou'
+        e.style.background = 'blue'
+    }
+    function sair(){
+        e.innerText = 'Saiu'
+        e.style.background = 'yellow'
+        e.style.color = 'black'
+    }
+    function apertar(){
+        t.innerText = 'Apertou'
+        t.style.background = '#FA8072'
+    }
+
+    function entrart(){
+        t.innerText = 'Passou aqui'
+        t.style.background = '#FF00FF'
+    }
+    function sairt(){
+        t.innerText = 'Flw,vlw'
+        t.style.background = '#836FFF'
+    }
+    function entrar00(){
+        p1.innerText = 'Tudo passa, tudo passará'
+        p1.style.background = 'red'
+    }
+    function sair00(){
+       p1.innerText = 'E passou'
+       p1.style.background = 'blue' 
+    }
+    function vezes(){
+    var t1 = window.document.getElementById("txtn1")   
+    var t2 = window.document.getElementById("txtn2")  
+    var res = window.document.querySelector("div#res")
+    var m1 = Number(t1.value)
+    var m2 = Number(t2.value)
+    var m = m1 * m2
+    res.innerText =`O número ${m1} multiplicado pelo número ${m2} é igual a ${m}`
+    }
+    </script>
+    </main>
+</html>

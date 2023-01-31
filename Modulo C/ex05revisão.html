@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de DOM</title>
+</head>
+<body>
+    <h1>Revisão de como é montar uma arvore DOM</h1>
+    <p>Saber como funcionar o DOM é importate para saber onde ta a ierarquia das coisas</p>
+    <p>Isso é muito importante, serio mesmo carai</p>
+    <div id="clique">Clique <a href="https://horadecodar.com.br/comunidade-hora-de-codar/?gclid=CjwKCAiAqaWdBhAvEiwAGAQltoaToC6Rbjqj0_exMNHn57v3n6YD1xCgneCW5v66CrVZhb_iXcqlfRoCCmUQAvD_BwE&sck=googleads" target="_blank">aqui:</a> </div>
+</body>
+<script>
+    var p1 = window.document.getElementsByTagName('p')[0]
+    var corpo = window.document.body
+    var d = window.document.getElementById('clique')
+    p1.style.color = "red"
+    corpo.style.background = 'blue'
+    //document.write(p1.innerHTML)
+    d.style.background="pink"
+    window.document.getElementById('clique').innerHTML = 'Vai te lascar'
+    
+
+</script>
+</html>
