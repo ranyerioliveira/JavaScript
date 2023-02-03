@@ -10,10 +10,25 @@
     <div id="area">
        <p>Bem vindo</p> 
     </div>
-    <br><br>
+    <br>
     <button onclick="document.getElementById('area').innerHTML = 'Bem vindo ' + prompt('Qual é seu nome?')"> Entrar </button>
     <!--Para mudar o HTMl se pega declara a tag com o id, pega o a id com o getElementById, () pega a ID, escreve no HTML com o 
     InnerHTML e depois colocar a função que será dada (ou escrita) ao HTML, nesse caso abriu um prompt no navegado com prompt('qual é o seu nome?')-->
-    
+    <br><br>
+    <div id="elem">
+        <p>Quantos anos você tem</p><br>
+        <button onclick="document.getElementById('elem').innerHTML = 'Eu tenho:' + prompt ('Sua idade') + ' ' + 'anos'">Idade</button>
+    </div><br>
+
+    <div>
+        <button onclick="this.innerHTML = prompt('Nome do botão')">Qual é o nome do botão</button>
+        <!-- Com o this muda a informação dentro de um botão, a informação digitada no prompt sera escrita dentro do botão-->
+    </div>
+    <br>
+    <div>
+     <button onclick="window.location.href = window.location.href;"> Atualizar</button>
+     <!--O window.location.href=window.location.href serve para atualizar a pagina, a teoria
+    é que o botão vai pegar a pagina inicial-->
+ </div><br>
 </body>
 </html>
