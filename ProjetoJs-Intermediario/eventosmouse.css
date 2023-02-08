@@ -1,0 +1,32 @@
+
+body{
+    height: 98vh;
+    background-color:#29596B ; 
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    background-color: aliceblue;
+    max-width: 350px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 8px;
+}
+main{
+    background-color: #A2DAEE;
+    max-width: 800px;
+    min-height: 550px;
+    padding: 25px;
+    margin: auto;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    button{
+        width: 300px; height: 60px;
+        border-radius: 8px;
+        font-size: larger;
+    }
+    button:hover{
+        background-color: #A2DAEE;
+    }
