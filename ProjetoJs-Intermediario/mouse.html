@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos de mouse </title>
+    <script src="mouse.js"></script>
 </head>
 <body>
     
+    
+    <ol>Eventos de Mouse <br><br>
+        <li> onmousedown</li><br>
+        <button style="width: 300px; height: 60px;" onmousedown="apertouomouse()"> Apertar o Mouse</button> <br><br>
+        <dl>Mostra que apartou o botão com o mouse</dl>
+        <li>onmouseup</li><br>
+        <button style="width: 300px; height: 60px;" onmousedown="apertouomouse()" onmouseup="soltarmouse()"> Soltar o Mouse</button>
+        <dl>Pode juntar as duas funções onmousedown e onmouseup e conferir que no console vai mostar que que apertou o mouse se soltar vai
+            mostrar que soltpu
+        </dl><br><br>
+        <li>onmouseover</li><br>
+        <button style="width: 300px; height: 60px;" onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()"> Soltar o Mouse</button>
+        <dl>Mostra que passou o mouse sobre um elemento ou botão</dl>
+        <li>onmouseout</li><br>
+        <button style="width: 300px; height: 60px;" onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()" onmouseout="tireiomouse()"> Soltar o Mouse</button>
+        <dl>Mostra quando sai do elemento ou do botão</dl>
+
+    </ol>
 </body>
 </html>
