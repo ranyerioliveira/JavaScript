@@ -18,13 +18,22 @@
         <button style="width: 300px; height: 60px;" onmousedown="apertouomouse()" onmouseup="soltarmouse()"> Soltar o Mouse</button>
         <dl>Pode juntar as duas funções onmousedown e onmouseup e conferir que no console vai mostar que que apertou o mouse se soltar vai
             mostrar que soltpu
-        </dl><br><br>
+        </dl><br>
         <li>onmouseover</li><br>
         <button style="width: 300px; height: 60px;" onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()"> Soltar o Mouse</button>
         <dl>Mostra que passou o mouse sobre um elemento ou botão</dl>
         <li>onmouseout</li><br>
         <button style="width: 300px; height: 60px;" onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()" onmouseout="tireiomouse()"> Soltar o Mouse</button>
         <dl>Mostra quando sai do elemento ou do botão</dl>
+        <li>onmousemove</li><br>
+        <button style="width: 300px; height: 60px;" onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()" onmouseout="tireiomouse()" onmousemove="movermouse()"> Mover o mouse dentro do botão</button>
+        <dl>Mostrar movendo o mouse dentro do botão</dl>
+        <li>*onclick</li><br>
+        <button style="width: 300px; height: 60px;" onclick="onClick()"> Mover o mouse dentro do botão</button>
+        <dl>O onclick é basicamente a mesma coisa que o onmouseup</dl>
+        <li>oncontexmenu</li><br>
+        <button style="width: 300px; height: 60px;" onclick="onClick()" oncontextmenu="botaodireito()"> Mover o mouse dentro do botão</button>
+        <dl>Clicar com o botão direito do mouse</dl>
 
     </ol>
 </body>
