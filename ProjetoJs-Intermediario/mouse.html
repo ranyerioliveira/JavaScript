@@ -12,31 +12,30 @@
     
     
     <main>
-        <h1>Eventos de Mouse </h1>
-        <ol><br><br>
+        <h1>Eventos de Mouse </h1><hr>
+        <ol>
             <li> onmousedown</li><br>
             <button onmousedown="apertouomouse()"> Apertar o Mouse</button> <br><br>
             <p>Mostra que apartou o botão com o mouse</p>
             <li>onmouseup</li><br>
             <button onmousedown="apertouomouse()" onmouseup="soltarmouse()"> Soltar o Mouse</button>
-            <p>Pode juntar as duas funções onmousedown e onmouseup e conferir que no console vai mostar que que apertou o mouse se soltar vai mostrar que soltou
-            </p><br>
+            <p>Pode juntar as duas funções onmousedown e onmouseup e conferir que no console vai mostar que apertou o mouse se soltar vai mostrar que soltou.           </p><br>
             <li>onmouseover</li><br>
-            <button onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()"> Soltar o Mouse</button>
+            <button onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()"> Entrei no Botão</button>
             <p>Mostra que passou o mouse sobre um elemento ou botão</p>
             <li>onmouseout</li><br>
-            <button onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()" onmouseout="tireiomouse()"> Soltar o Mouse</button>
+            <button onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()" onmouseout="tireiomouse()"> Sai do botão com o mouse</button>
             <p>Mostra quando sai do elemento ou do botão</p>
             <li>onmousemove</li><br>
             <button onmousedown="apertouomouse()" onmouseup="soltarmouse()" onmouseover="passeiomouse()" onmouseout="tireiomouse()" onmousemove="movermouse()"> Mover o mouse dentro do botão</button>
             <p>Mostrar movendo o mouse dentro do botão</p>
             <li>*onclick</li><br>
-            <button onclick="onClick()"> Mover o mouse dentro do botão</button>
+            <button onclick="onClick()"> Apertar o Mouse</button>
             <p>O onclick é basicamente a mesma coisa que o onmouseup</p>
             <li>oncontexmenu</li><br>
-            <button onclick="onClick()" oncontextmenu="botaodireito()"> Mover o mouse dentro do botão</button>
+            <button onclick="onClick()" oncontextmenu="botaodireito()"> Clicar com o botão direito</button>
             <p>Clicar com o botão direito do mouse</p>
-           </ol>
+        </ol>
     </main>
 </body>
 </html>
