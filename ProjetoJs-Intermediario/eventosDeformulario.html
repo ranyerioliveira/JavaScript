@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de formulario</title>
+    <script src="eventosDeformulario.js"></script>
+</head>
+<body>
+<main>
+    <h1>Eventos de formulario</h1>
+    
+        <form method="POST" onsubmit="return false">
+            <input type="text" name="nome" onfocus="focado()" onblur="sairDoFoco()"><br><br>
+    
+            <select name="cidade" id="cidade" onchange="selecionarCidade(this)">
+                <option value="Natal">Natal</option>
+                <option value="Paramirim">Paramirim</option>
+                <option value="Macaiba">Macaiba</option>
+                <option value="Caicó">Caicó</option>
+            </select><br><br>
+    
+            <input type="submit" value="Enviar">
+    
+        </form>
+    <h2>*onfocus</h2>
+    <p>Mostra que um elemento foi focado</p>
+    <h2>*onblur</h2>
+    <p>Mostra quando você sai do foco do elemento</p>
+    <h2>*onchenge</h2>
+    <p>Serve para selecionar um elemento, nesse caso no select no formulário</p>
+    <h2>*onsubmit</h2>
+    <p>Quando envia a requisição</p>
+
+
+</main>
+</body>
+</html>
