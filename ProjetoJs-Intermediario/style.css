@@ -1,0 +1,44 @@
+body{
+    height: 98vh;
+    background-color: black;
+}
+header{
+    display: flex;
+    padding: 15px;
+}
+div#cabeça{
+    margin: auto;
+}
+
+nav{
+    background-color: rgba(243, 243, 9, 0.719);
+    margin: auto;
+    max-width: 800px;
+    min-height: 150px;
+    border-radius: 7px;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+    
+}
+a#link{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+a#link:hover{
+    color: red;
+}
+footer{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+footer > a{
+    text-decoration: none;
+    color: white;
+}
+footer > a:hover{
+    color: yellow;
+}
