@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos teclado</title>
     <script src="eventosTeclado.js"></script>
+    <link rel="stylesheet" href="eventosTeclado.css">
 </head>
 <body>
-    <h1>Eventos de Teclado</h1>
-    <hr>
-    <ol>
-       <li>onkeydown</li><br>
-        <input type="text" onkeydown="apertar(event)"><br>
-        <p>Essa função mostra quando aperta alguma tecla do teclado. Da para 
-            utilizar o if para selecionar uma tecla apertada, exemplo comentado 
-            no codigo JS.
-            Da pra criar uma situação de bloquear alguma ação com  Ex: 'Teclado apertado!' + event.ctrlKey
-            o ctrl ficara como true e as outras teclas false.
-        </p>
-        <li>onkeyup</li><br>
-        <input type="text" onkeyup="soltouOteclado(event)">
-        <p>Função que mostra quando solta o botão do teclado depois
-            de ter segurado a tecla.
-        </p>
-        <li>onkeypress</li><br>
-        <input type="text" onkeypress="apertouNoTeclado(event)">
-        <p>Mostra quando aperta uma tecla</p>
-    </ol>
-    
+    <main>
+        <h1>Eventos de Teclado</h1>
+        <hr>
+        <ol>
+           <li>onkeydown</li><br>
+            <input type="text" onkeydown="apertar(event)"><br>
+            <p>Essa função mostra quando aperta alguma tecla do teclado. Da para
+                utilizar o if para selecionar uma tecla apertada, exemplo comentado
+                no codigo JS.
+                Da pra criar uma situação de bloquear alguma ação com  Ex: 'Teclado apertado!' + event.ctrlKey
+                o ctrl ficara como true e as outras teclas false.
+            </p>
+            <li>onkeyup</li><br>
+            <input type="text" onkeyup="soltouOteclado(event)">
+            <p>Função que mostra quando solta o botão do teclado depois
+                de ter segurado a tecla.
+            </p>
+            <li>onkeypress</li><br>
+            <input type="text" onkeypress="apertouNoTeclado(event)">
+            <p>Mostra quando aperta uma tecla</p>
+        </ol>
+        
+    </main>
 </body>
 </html>

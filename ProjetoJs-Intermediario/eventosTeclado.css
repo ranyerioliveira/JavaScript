@@ -1,4 +1,3 @@
-
 body{
     height: 98vh;
     background-color: rgba(243, 243, 9, 0.719);
@@ -23,12 +22,3 @@ main{
     border-radius: 8px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    button{
-        width: 300px; height: 60px;
-        border-radius: 8px;
-        font-size: larger;
-    }
-    button:hover{
-        background-color:rgba(243, 243, 9, 0.842);
-    }
-   
