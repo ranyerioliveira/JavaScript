@@ -1,0 +1,25 @@
+
+body{
+    height: 98vh;
+    background-color: rgba(243, 243, 9, 0.719);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    color: white;
+    max-width: 350px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 8px;
+}
+main{
+    background-color: black;
+    color: white;
+    max-width: 800px;
+    min-height: 550px;
+    padding: 25px;
+    margin: auto;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
