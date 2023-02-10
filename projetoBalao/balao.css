@@ -5,3 +5,8 @@
     border-radius: 50px;
     position: absolute;
 }
+h3{
+    text-align: center;
+    color: red;
+    font-size: 25px;
+}
