@@ -9,14 +9,16 @@
     <script src="projetoCalculadora.js"></script>
 </head>
 <body>
-    <form method="POST" onsubmit="return calcular()">
-        Digite seu peso <br>
-        <input type="text" name="peso" id="peso" placeholder="Exemplo: 65"><br><br>
-        Digite sua altura: <br>
-        <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.75"><br><br>
-        <input type="submit" value="Calcular o IMC">
-    </form>    
-
-    <div id="resultado"></div>
-</body>
+    <main>
+        <h1>Calculadora IMC</h1>
+        <form method="POST" onsubmit="return calcular()">
+            Digite seu peso <br>
+            <input type="text" name="peso" id="peso" placeholder="Exemplo: 65"><br><br>
+            Digite sua altura: <br>
+            <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.75"><br><br>
+            <input type="submit" value="Calcular o IMC">
+        </form>
+        <div id="resultado"></div>
+        </body>
+    </main>
 </html>
