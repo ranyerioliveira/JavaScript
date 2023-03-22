@@ -13,10 +13,37 @@
     //return item ===4;
 //}) 
 //console.log(find);
-function adicionar(...numeros){
-    let total = numeros.reduce((total, proximo) => {
-        return total + proximo;
-    })
-    console.log(total);
+//function adicionar(...numeros){
+    //let total = numeros.reduce((total, proximo) => {
+//return total + proximo;
+   // })
+   //console.log(total);
+//}
+//adicionar(1,2,3,4,5,6);
+
+class List(){
+    constructor(){
+    this.data = [];
 }
-adicionar(1,2,3,4,5,6);
+
+add(data){
+    this.data.push(data);
+    console.log(this.data);
+}
+}
+class ListaTarefas{
+    constructor(){
+        this.tarefas =[];
+
+    }
+    addTarefa(){
+        this.tarefas.push("Nova Tarefa");
+        console.log(this.tarefas);
+    }
+};
+const minhasTarefas = new ListaTarefas();
+
+document.getElementById('novo').onclick = function(){
+    minhasTarefas.addTarefa();
+
+}
