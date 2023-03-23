@@ -21,7 +21,7 @@
 //}
 //adicionar(1,2,3,4,5,6);
 
-class List(){
+class List{
     constructor(){
     this.data = [];
 }
@@ -31,19 +31,12 @@ add(data){
     console.log(this.data);
 }
 }
-class ListaTarefas{
-    constructor(){
-        this.tarefas =[];
-
-    }
-    addTarefa(){
-        this.tarefas.push("Nova Tarefa");
-        console.log(this.tarefas);
-    }
+class ListaTarefas extends List{
+    
 };
 const minhasTarefas = new ListaTarefas();
 
 document.getElementById('novo').onclick = function(){
-    minhasTarefas.addTarefa();
+    minhasTarefas.add("Minha Tarefa");
 
 }
